@@ -724,8 +724,9 @@ header{
     gap: 5rem;
 }
 
-.about__achievements-right > p{
-    margin: 1.6ewm 0 2.5rem;
+.about__achieventment-right > p{       
+    margin: 1rem 0 2.5rem;
+    font-size: small;        
 }
 
 .achievements__cards{
@@ -811,8 +812,23 @@ header{
     margin-top: 1.4rem;
 }
 
+.team__member-info h4{
+    color: blanchedalmond;
+}
+
 .team__member-info p{
-    color: var(--color-light);
+    filter: saturate(0);
+    color: var(--color-succes);
+}
+
+.team__member:hover p{
+    color: var(--color-white);
+    filter: saturate(1);
+}
+
+.team__member:hover h4{
+    color: var(--color-white);
+    filter: saturate(1);
 }
 
 .team__member-socials{
