@@ -4,18 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class PPTIK</title>
-    <link rel="stylesheet" href="Style.css">
-    <style>
-        .courses{
-            margin-top: 80px;
-        }
-        body{
-            background-image: url(./images/bg-texture.png);
-        }
-    </style>
+    <title>Contact | Class PPTIK</title>
+    <link rel="stylesheet" href="Style.css">   
 </head>
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.jpg">
 
     <!--ICONSCOUT-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
@@ -34,20 +26,19 @@
 <body>
     <!--Navbar-->
     <nav>
-        <div class="container nav__container">
+        <div class="container nav__container hidden">
             <a href="#">Class PPTIK</a>
 
-            <ul class="nav__menu">
+            <ul class="nav__menu hidden">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="About.html">About</a></li>
                 <li><a href="Courses.html">Courses</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             
-            
 
-            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
-            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+            <button id="open-menu-btn"><i class="uil uil-bars hidden"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply hidden"></i></button>
  
         </div>
     </nav>
@@ -57,7 +48,7 @@
 
         <div class="container contact__container">
 
-            <aside class="contact__aside">
+            <aside class="contact__aside hidden">
 
                 <div class="aside__image">
                     <img src="./images/contact.svg">
@@ -91,7 +82,7 @@
                 </ul>
             </aside>
 
-            <form action="https://formspree.io/f/mgeqrvbp" method="post" class="contact__form">
+            <form action="https://formspree.io/f/mgeqrvbp" method="post" class="contact__form hidden">
                 <div class="form__name">
                     <input type="text" name="First Name" placeholder="First Name" required>
                     <input type="text" name="Last Name" placeholder="Last Name" required>
@@ -103,22 +94,22 @@
         </div>
     </section>
 
-    <!--Footer-->
-    <footer class="footer">
+     <!--Footer-->
+     <footer>
 
         <div class="container footer__container">
 
-            <div class="footer__1">
-                <a href="#" class="footer__logo">
+            <div class="footer__1 hidden">
+                <a href="#" class="footer__logo hidden">
                     <h4>Class PPTIK</h4>
                 </a>
-                <p> 
+                <p>
                     Mari belajar bersama dan 
                     tingkatkan pengetahuan teknologi Anda!
                 </p>
             </div>
 
-            <div class="footer__2">
+            <div class="footer__2 hidden">
                 <h4>Class PPTIK</h4>
                 <ul class="permalinks">
                     <li><a href="#">Home</a></li>
@@ -128,18 +119,18 @@
                 </ul>
             </div>
 
-            <div class="footer__3">
-                <h4>Privasi</h4>
+            <div class="footer__3 hidden">
+                <h4>About PPTIK</h4>
                 <ul class="privacy">
-                    <li><a href="#">Privasi PPTIK</a></li>
+                    <li><a href="#">Dowload App PPTIK</a></li>
                     <li><a href="#">Term an dondisi</a></li>
                     <li><a href="#">Refund policy</a></li>
                 </ul>
             </div>
 
-            <div class="footer__4">
+            <div class="footer__4 hidden">
                 <h4>Contact us</h4>
-
+                
                 <div>
                     <p>(022) 73516650</p>
                     <p>pt.lskk@gmail.com</p>
@@ -163,7 +154,7 @@
             </div>
 
         </div>
-        <div class="footer__copyright">
+         <div class="footer__copyright hidden">
             <small>Copyright &copy; 2023 Hanifama. Hak Cipta Hanya Milik Allah </small> 
          </div>
 
@@ -172,28 +163,6 @@
 
     <!--Main js-->
     <script src="main.js"></script>
-    
-    <!--Swiperjs-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-        //swiper testimonial
-            var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 1,
-                spaceBetween: 30,
-                pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-                },
-                //swiper testimonial
-                breakpoints:{
-                    600:{
-                        slidesPerView:2
-                    }
-                }
-                     });
-            
-        
-    </script>
 
 </body>
 </html>

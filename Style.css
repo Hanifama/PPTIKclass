@@ -36,6 +36,7 @@ body{
     line-height: 1.7;
     color: var(--color-white);
     background: var(--color-bg);
+    background-image: url(./images/bg-texture.png);
 }
 
 .container{
@@ -265,8 +266,12 @@ header{
 
 /*===============================Popular Course======================*/
 
-.courses{
+.popular_courses{
     margin-top: 9rem;
+}
+
+.courses{
+    margin-top: 5rem;
 }
 
 .course__container{
@@ -282,12 +287,21 @@ header{
     transition: var(--transition);
 }
 
-.course:hover{
+  .course.hovered {
     background: transparent;
     border-color: var(--color-primary);
-}
+  }
+  
+  .course.hoverable .course_image {
+    transition: var(--transition);
+  }
+  
+  .course.hoverable.hovered .course_image {
+    transform: scale(0.9);
+  }
+  
 
-.course:nth-child(1) .course_image{
+/* .course:nth-child(1) .course_image{
     transition:var(--transition);
 }
 
@@ -309,7 +323,7 @@ header{
 
 .course:nth-child(3) .course_image:hover{
     transform: scale(0.9); 
-}
+} */
 
 .courses{
     background: transparent;
@@ -473,6 +487,50 @@ footer ul li a:hover{
 } 
 
 /*===============================End Footer======================*/
+
+/*===============================on scrolling======================*/
+
+.hidden{
+ opacity: 0;
+ filter: blur(5px);
+ transform: scale(0);
+}
+
+.show{
+    opacity: 1;   
+    transition: var(--transition);
+    transform: scale(1);
+    filter: blur(0);
+}
+
+.team__member:nth-child(1){
+    transition-delay: 200ms;
+   }
+
+.team__member:nth-child(2){
+ transition-delay: 300ms;
+}
+
+.team__member:nth-child(3){
+ transition-delay: 400ms;
+}
+
+.team__member:nth-child(4){
+    transition-delay: 500ms;
+}
+
+.team__member:nth-child(5){
+    transition-delay: 600ms;
+}
+
+.team__member:nth-child(6){
+    transition-delay: 700ms;
+}
+
+
+
+/*===============================End scroll======================*/
+
 
 
 /*===============================Media Quieres responsive (Tablet)======================*/
@@ -702,13 +760,6 @@ header{
 
 
 }
-
-
-
-
-
-
-
 /*===============================About.html======================*/
 
 

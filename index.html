@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class PPTIK</title>
+    <title>Home | Class PPTIK</title>
     <link rel="stylesheet"  type="text/css" href="Style.css">
     <link rel="shortcut icon" href="images/favicon.jpg">
 
@@ -16,13 +16,7 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-
-    <style>
-        body{
-            background-image: url(./images/bg-texture.png);
-        }
-    </style>
-
+    
     <!--Font gogel-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,10 +25,10 @@
 <body>
     <!--Navbar-->
     <nav>
-        <div class="container nav__container">
+        <div class="container nav__container hidden">
             <a href="#">Class PPTIK</a>
 
-            <ul class="nav__menu">
+            <ul class="nav__menu hidden">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="About.html">About</a></li>
                 <li><a href="Courses.html">Courses</a></li>
@@ -42,8 +36,8 @@
             </ul>
             
 
-            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
-            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+            <button id="open-menu-btn"><i class="uil uil-bars hidden"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply hidden"></i></button>
  
         </div>
     </nav>
@@ -54,7 +48,7 @@
 
         <div class="container header__container">
 
-            <div class="header__left">
+            <div class="header__left hidden">
                 <h1>Kembangkan skill anda di class PPTIK ini</h1>
                 <p>
                     PT. LSKK bekerjasama dengan PPTIK ITB membuka peluang 
@@ -65,7 +59,7 @@
                     <a href="https://linktr.ee/workshop.lskk" class="btn btn-primary">JOIN NOW</a>
             </div>
 
-            <div class="header__right">
+            <div class="header__right hidden">
                 <div class="header__right-image">
                     <img src="images/header.svg" >
                 </div>
@@ -73,9 +67,7 @@
 
         </div>
 
-    </header>
-
-    
+    </header>    
     <!--END HEADER-->
 
 
@@ -84,18 +76,18 @@
         <div class="container categories__container">
 
             <div class="categories__left">
-                <h1>Categories</h1>
-                <p>
+                <h1 class="hidden">Categories</h1>
+                <p class="hidden">
                     Anda dapat dengan mudah menemukan kursus yang sesuai dengan minat dan kebutuhan Anda.
                     Dari kategori teknologi mutakhir hingga seni kreatif, setiap kategori dirancang 
                     untuk memberikan pengalaman pembelajaran yang mendalam dan memuaskan. 
                 </p>
-                <a href="#" class="btn">Baca sini</a>
+                <a href="#" class="btn hidden">Baca sini</a>
             </div>
 
             <div class="categories__right">
 
-                <article class="category">
+                <article class="category hidden">
                     <span class="category__icon">
                         <i class="uil uil-book"></i>
                     </span>
@@ -103,7 +95,7 @@
                     <p> Pelajari struktur, desain, dan pengelolaan database untuk kebutuhan database Anda.</p>
                 </article>
 
-                <article class="category">
+                <article class="category hidden">
                     <span class="category__icon">
                         <i class="uil uil-cloud-database-tree"></i>
                     </span>
@@ -111,7 +103,7 @@
                     <p>Telusuri dunia aplikasi seluler melalui kategori Mobile Apps kami</p>
                 </article>
                 
-                <article class="category">
+                <article class="category hidden">
                     <span class="category__icon">
                         <i class="uil uil-database"></i>
                     </span>
@@ -119,7 +111,7 @@
                     <p>merancang dan mengembangkan situs web yang elegan berbagai perangkat dan ukuran layar.</p>
                 </article>
 
-                <article class="category">
+                <article class="category hidden">
                     <span class="category__icon">
                         <i class="uil uil-credit-card-search"></i>
                     </span>
@@ -127,7 +119,7 @@
                     <p>merancang, mengembangkan, dan memelihara perangkat lunak berkualitas tinggi.</p>
                 </article>
 
-                <article class="category">
+                <article class="category hidden">
                     <span class="category__icon">
                         <i class="uil uil-clinic-medical"></i>
                     </span>
@@ -135,7 +127,7 @@
                     <p>keterampilan esensial yang diperlukan untuk menciptakan karya 3D yang menakjubkan dan realistis.</p>
                 </article>
 
-                <article class="category">
+                <article class="category hidden">
                     <span class="category__icon">
                         <i class="uil uil-backpack"></i>
                     </span>
@@ -147,18 +139,17 @@
 
         </div>
     </section>
-
     <!--end KATEGORI-->
 
     
     <!--COURSE-->
-    <section class="courses">
+    <section class="popular_courses">
 
-        <h2>Popular Class</h2>
+        <h2 class="hidden">Popular Class</h2>
 
         <div class="container course__container">
 
-            <article class="course">
+            <article class="course hoverable hidden">
                 <div class="course_image">
                     <img src="./images/course1.png" alt="web picture">  
                 </div>
@@ -175,7 +166,7 @@
                 </div>
             </article>
 
-            <article class="course">
+            <article class="course hoverable hidden">
                 <div class="course_image">
                     <img src="./images/course2.jpg" alt="mobile picture">
                 </div>
@@ -192,7 +183,7 @@
                 </div>
             </article>
 
-            <article class="course">
+            <article class="course hoverable hidden">
                 <div class="course_image">
                     <img src="./images/course3.jpg" alt="robotika picture" height="170px" >
                 </div>
@@ -214,10 +205,10 @@
 
     <!--Faqs-->
     <section class="faqs">
-        <h2>QNA PPTIK CLASS</h2>
+        <h2 class="hidden">QNA PPTIK CLASS</h2>
         <div class="container faqs__container">
 
-            <article class="faq">
+            <article class="faq hidden">
                 <div class="faq__icon"><i class="uil uil-plus"></i></div>
                 <div class="question__answer">
                     <h4>Apa saja materi yang akan dipelajari dalam Class PPTIK?</h4>
@@ -229,7 +220,7 @@
                 </div>
             </article>
 
-            <article class="faq">
+            <article class="faq hidden">
                 <div class="faq__icon"><i class="uil uil-plus"></i></div>
                 <div class="question__answer">
                     <h4>Bagaimana saya dapat mendaftar untuk kelas PPTIK secara online?</h4>
@@ -241,7 +232,7 @@
                 </div>
             </article>
 
-            <article class="faq">
+            <article class="faq hidden">
                 <div class="faq__icon"><i class="uil uil-plus"></i></div>
                 <div class="question__answer">
                     <h4> Apa manfaat utama mengikuti kelas PPTIK?</h4>
@@ -254,7 +245,7 @@
                 </div>
             </article>
 
-            <article class="faq">
+            <article class="faq hidden">
                 <div class="faq__icon"><i class="uil uil-plus"></i></div>
                 <div class="question__answer">
                     <h4>Apakah ada prasyarat tertentu untuk mengikuti kelas PPTIK?</h4>
@@ -266,7 +257,7 @@
                 </div>
             </article>
 
-            <article class="faq">
+            <article class="faq hidden">
                 <div class="faq__icon"><i class="uil uil-plus"></i></div>
                 <div class="question__answer">
                     <h4>Bagaimana dukungan belajar online disediakan untuk siswa dalam kelas PPTIK?</h4>
@@ -278,7 +269,7 @@
                 </div>
             </article>
 
-            <article class="faq">
+            <article class="faq hidden">
                 <div class="faq__icon"><i class="uil uil-plus"></i></div>
                 <div class="question__answer">
                     <h4> Apakah kelas PPTIK dirancang untuk pemula atau orang dengan pengetahuan sebelumnya tentang TI?</h4>
@@ -292,7 +283,7 @@
                 </div>
             </article>
 
-            <article class="faq">
+            <article class="faq hidden">
                 <div class="faq__icon"><i class="uil uil-plus"></i></div>
                 <div class="question__answer">
                     <h4>Apakah sertifikat akan diberikan setelah menyelesaikan kelas PPTIK?</h4>
@@ -304,7 +295,7 @@
                 </div>
             </article>           
 
-            <article class="faq">
+            <article class="faq hidden">
                 <div class="faq__icon"><i class="uil uil-plus"></i></div>
                 <div class="question__answer">
                     <h4>Apakah sertifikat dari kelas PPTIK memiliki tanggal kadaluwarsa?</h4>
@@ -322,7 +313,7 @@
 
     
     <!--Testimonial-->
-    <section class="container testimonials__container mySwiper">
+    <section class="container testimonials__container mySwiper hidden">
         <h2>Students' Testimonial</h2>
 
         <div class="swiper-wrapper">
@@ -453,8 +444,8 @@
 
         <div class="container footer__container">
 
-            <div class="footer__1">
-                <a href="#" class="footer__logo">
+            <div class="footer__1 hidden">
+                <a href="#" class="footer__logo hidden">
                     <h4>Class PPTIK</h4>
                 </a>
                 <p>
@@ -463,7 +454,7 @@
                 </p>
             </div>
 
-            <div class="footer__2">
+            <div class="footer__2 hidden">
                 <h4>Class PPTIK</h4>
                 <ul class="permalinks">
                     <li><a href="#">Home</a></li>
@@ -473,7 +464,7 @@
                 </ul>
             </div>
 
-            <div class="footer__3">
+            <div class="footer__3 hidden">
                 <h4>About PPTIK</h4>
                 <ul class="privacy">
                     <li><a href="#">Dowload App PPTIK</a></li>
@@ -482,7 +473,7 @@
                 </ul>
             </div>
 
-            <div class="footer__4">
+            <div class="footer__4 hidden">
                 <h4>Contact us</h4>
                 
                 <div>
@@ -508,7 +499,7 @@
             </div>
 
         </div>
-         <div class="footer__copyright">
+         <div class="footer__copyright hidden">
             <small>Copyright &copy; 2023 Hanifama. Hak Cipta Hanya Milik Allah </small> 
          </div>
 
