@@ -114,7 +114,7 @@ nav{
     position: fixed;
     top: 0;
     z-index: 11;
-}
+}  
 
 
 /*===============================NAVBARWINDOWS======================*/
@@ -144,13 +144,27 @@ nav button{
 }
 
 .nav__menu a{
+    position: relative;
     font-size: 0.9rem;
     transition:var(--transition);
 }
 
-.nav__menu a:hover{
-    color: var(--color-bg2);
+.nav__menu a:hover{    
+    position: relative;          
+    color: var(--color-primary);
 }
+
+.active::after {
+    position: absolute;
+    content: "";
+    width: 2rem;
+    height: 00.18rem;
+    left: 0;
+    top: 1.5rem;
+    background-color: var(--color-primary);
+  }
+
+
 /*===============================END NAVBAR======================*/
 
 
